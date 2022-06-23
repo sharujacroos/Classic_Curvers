@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/12c93d34fa.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">         
+    <link href="style/Feedback.css" rel="stylesheet">                                                                                       
+    <title>Classic Curvers</title>
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+        </label>
+        <img src="img/Logo.png" alt="Logo" class="logo">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="women.html">Women</a></li>
+            <li><a href="men.html">Men</a></li>
+            <li><a class="active" href="kid.html">Kid's</a></li>
+            <li><a href="Accories.html">Accories</a></li>
+            <li><a href="offer.html">Today's sale</a></li>
+            <li><a href="about us.html">About Us</a></li>
+            <li><a href="Feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+    <div>
+        <h1>Feedback</h1>
+    </div>
+    <div class="copartment">
+        <form name="myForm">
+            <div class="row">
+              <div class="col-10">
+                <label>Full Name</label>
+              </div>
+              <div class="col-90">
+                <input type="text" name="fname" placeholder="Your name..">
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-10">
+                  <label>E-Mail</label>
+                </div>
+                <div class="col-90">
+                  <input type="text" name="email"  placeholder="YourE-mail..">
+                </div>
+              </div>
+            <div class="row">
+              <div class="col-10">
+                <label for="subject">Feedback</label>
+              </div>
+              <div class="col-90">
+                <textarea name="feedback"  placeholder="Write something.." style="height:100px"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <input type="submit" value="Submit" onclick="return(validate());">
+            </div>
+          </form>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <h3>CLASSIC CURVERS</h3>
+            <p>We hope our team provides the best shopping experience and quality serivce.<br> Their thanks to everyone who traveled with us on our website.</p>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2022 Classic Curvers.designed by <span>Our Team</span></p>
+        </div>
+    </footer>
+    <script> 
+    function validate() 
+      { 
+      if( document.myForm.fname.value == "" ) 
+      { 
+        alert( "Please provide your name!" ); 
+        document.myForm.name.focus() ; 
+        return false;
+      } 
+      if( document.myForm.email.value == "" ) 
+      { 
+        alert( "Please provide your Email!" ); 
+        document.myForm.email.focus() ; 
+        return false; } return( true ); 
+      }
+         </script> 
+</body>
+</html>
